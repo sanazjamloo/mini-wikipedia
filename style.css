@@ -30,3 +30,13 @@
   z-index: -2;
   border-radius: 8px 8px 0 0;
 }
+
+#dropFileForm .uploadButton {
+  border: 0;
+  outline: 0;
+  width: 100%;
+  padding: 8px;
+  background-color: limeGreen;
+  color: #fff;
+  cursor: pointer;
+}
