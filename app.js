@@ -13,3 +13,7 @@ function fileHover() {
 function fileHoverEnd() {
   dropFileForm.classList.remove("fileHover");
 }
+
+function addFiles(event) {
+
+}
