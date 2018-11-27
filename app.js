@@ -1,5 +1,6 @@
 var dropFileForm = document.getElementById("dropFileForm");
-
+var droppedFiles;
+var fileLabelText = document.getElementById("fileLabelText");
 // function to override the file drop on the entire page
 function overrideDefault(event) {
   event.preventDefault();
@@ -15,5 +16,11 @@ function fileHoverEnd() {
 }
 
 function addFiles(event) {
+  droppedFiles=event.dataTransfer.files;
+  showFiles(droppedFiles);
+
+}
+
+function showFiles(files) {
 
 }
