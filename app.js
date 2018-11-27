@@ -22,5 +22,10 @@ function addFiles(event) {
 }
 
 function showFiles(files) {
+  if (files.length > 1) {
+  fileLabelText.innerText = files.length + " files selected";
+} else {
+  fileLabelText.innerText = files[0].name;
+}
 
 }
