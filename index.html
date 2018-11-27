@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Latest Plane Crash</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -17,7 +18,16 @@
 
     <form id="dropFileForm" action="" method="post">
       <input type="file" name="files[]" id="fileInput" multiple>
-      <label for="fileInput" id="fileLabel">Choose a file or drag it here:</label>
+      <label for="fileInput" id="fileLabel"
+      ondragover="overrideDefault(event)"
+      ondragenter="overrideDefault(event)"
+      ondragleave="overrideDefault(event)"
+      ondrop="overrideDefault(event)">
+        <i class=" fa fa-download fa-5x"></i>
+        <br>
+        Choose a file or drag it here:
+      </label>
+
       <input type="submit" value="Add Photos" class="uploadButton">
 
     </form>
