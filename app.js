@@ -1,6 +1,8 @@
 var dropFileForm = document.getElementById("dropFileForm");
 var droppedFiles;
 var fileLabelText = document.getElementById("fileLabelText");
+var uploadStatus = document.getElementById("uploadStatus");
+var fileInput = document.getElementById("fileInput");
 // function to override the file drop on the entire page
 function overrideDefault(event) {
   event.preventDefault();
@@ -16,7 +18,7 @@ function fileHoverEnd() {
 }
 
 function addFiles(event) {
-  droppedFiles=event.dataTransfer.files;
+  droppedFiles=event.target.files || event.dataTransfer;
   showFiles(droppedFiles);
 
 }
@@ -29,3 +31,30 @@ function showFiles(files) {
 }
 
 }
+
+
+function uploadFiles(event) {
+  event.preventDefault();
+  changeStatus("Uploading...");
+
+  var formData = new FormData();
+
+  for (var i = 0, file; (file = droppedFiles[i]); i++) {
+    formData.append(fileInput.name, file, file.name);
+  }
+
+  var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function(data) {
+      //handle server response and change status of
+      //upload process via changeStatus(text)
+      console.log(xhr.response);
+    };
+    xhr.open(dropFileForm.method, dropFileForm.action, true);
+    xhr.send(formData);
+}
+
+
+
+  function changeStatus(text) {
+    uploadStatus.innerText = text;
+  }
