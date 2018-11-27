@@ -19,8 +19,8 @@
     <form id="dropFileForm" action="" method="post">
       <input type="file" name="files[]" id="fileInput" multiple>
       <label for="fileInput" id="fileLabel"
-      ondragover="overrideDefault(event)"
-      ondragenter="overrideDefault(event)"
+      ondragover="overrideDefault(event); fileHover();"
+      ondragenter="overrideDefault(event); fileHover();"
       ondragleave="overrideDefault(event)"
       ondrop="overrideDefault(event)">
         <i class=" fa fa-download fa-5x"></i>
