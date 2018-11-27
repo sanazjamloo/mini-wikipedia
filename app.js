@@ -9,3 +9,7 @@ function overrideDefault(event) {
 function fileHover() {
   dropFileForm.classList.add("fileHover");
 }
+
+function fileHoverEnd() {
+  dropFileForm.classList.remove("fileHover");
+}

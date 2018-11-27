@@ -21,8 +21,8 @@
       <label for="fileInput" id="fileLabel"
       ondragover="overrideDefault(event); fileHover();"
       ondragenter="overrideDefault(event); fileHover();"
-      ondragleave="overrideDefault(event)"
-      ondrop="overrideDefault(event)">
+      ondragleave="overrideDefault(event); fileHoverEnd();"
+      ondrop="overrideDefault(event); fileHoverEnd();">
         <i class=" fa fa-download fa-5x"></i>
         <br>
         Choose a file or drag it here:
