@@ -52,8 +52,6 @@ function uploadFiles(event) {
     xhr.send(formData);
 }
 
-
-
   function changeStatus(text) {
     uploadStatus.innerText = text;
   }
