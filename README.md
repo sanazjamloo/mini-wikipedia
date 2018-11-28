@@ -7,7 +7,7 @@ The Tech Stack chosen for this project is HTML, CSS, and JavaScript. The reason 
 
 ## The Coding Challenge Specifications
 
-```
+
 You are building a web frontend for a mini-Wikipedia with only a single long article called 'Latest_plane_crash'.
 
 A lot of editors following a recent plane crash are scrambling to update the page with photographs as details emerge (up to 10 uploads per second). The upload process begins with the user clicking a button labeled “Add Photo”, which spawns a drag and drop-capable file upload interface. Upon upload, the user is prompted to provide information about key attributes of the photograph (e.g. a short description, content license, location, whatever you feel may be relevant), and is then directed to pick the point of insertion within the article.
