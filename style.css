@@ -1,11 +1,6 @@
-body {
+.container {
   margin: 2%;
 }
-
-
-
-
-
 
 #dropFileForm {
   margin: 16px;
@@ -16,7 +11,7 @@ body {
 }
 
 #dropFileForm #fileLabel {
-  background-color: rgba(0, 255, 0, 0.5);
+  background-color: #d9edf7;
   display: block;
   padding: 16px;
   position: relative;
@@ -58,7 +53,7 @@ body {
   outline: 0;
   width: 100%;
   padding: 8px;
-  background-color: limeGreen;
+  background-color: #2e6da4;
   color: #fff;
   cursor: pointer;
 }

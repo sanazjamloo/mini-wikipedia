@@ -1,8 +1,9 @@
 var dropFileForm = document.getElementById("dropFileForm");
-var droppedFiles;
 var fileLabelText = document.getElementById("fileLabelText");
 var uploadStatus = document.getElementById("uploadStatus");
 var fileInput = document.getElementById("fileInput");
+var droppedFiles;
+
 // function to override the file drop on the entire page
 function overrideDefault(event) {
   event.preventDefault();
@@ -18,9 +19,8 @@ function fileHoverEnd() {
 }
 
 function addFiles(event) {
-  droppedFiles=event.target.files || event.dataTransfer;
+  droppedFiles = event.target.files || event.dataTransfer.files;
   showFiles(droppedFiles);
-
 }
 
 function showFiles(files) {
@@ -31,7 +31,6 @@ function showFiles(files) {
 }
 
 }
-
 
 function uploadFiles(event) {
   event.preventDefault();

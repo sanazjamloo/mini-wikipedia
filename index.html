@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <script src="app.js"></script>
   </head>
-  <body>
+  <body class="container">
 
     <h2>Wikipedia</h2>
     <p>The Free Encyclopedia</p>
     <h4>Latest Plane Crash</h4>
-    <p> Dear editors, thank you for updating this artocle. Please add your photos here: </p>
+    <p> Dear editors, thank you for updating this article. Please add your photos here: </p>
 
     <form id="dropFileForm" action="http://localhost/upload.php" method="post" onsubmit="uploadFiles(event)">
       <input type="file" name="files[]" id="fileInput" multiple onchange="addFiles(event)">
