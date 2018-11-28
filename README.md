@@ -2,7 +2,7 @@
 
 The goal of this small project is to achieve a photo/file uploading feature to a fictional Wikipedia page.
 
-The Tech Stack chosen for this project is HTML, CSS, and JavaScript. The reason to use this stack is the simplicity and the convenience of the JavaScript.
+The Tech Stack chosen for this project is HTML, CSS, and JavaScript. The reason for using this stack is the simplicity and the convenience of JavaScript.
 
 
 ## The Coding Challenge Specifications
